@@ -1,35 +1,34 @@
-import kivy
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.dirname(__file__)))
 from kivy.app import App
-from kivy.uix.screenmanager import ScreenManager, Screen
-from kivy.uix.boxlayout import BoxLayout
-from kivy.uix.button import Button
+from kivy.uix.screenmanager import ScreenManager
+from screens.home_screen import HomeScreen
+from screens.add_password import AddPasswordScreen
 
-# Definindo a tela inicial (HomeScreen)
-class HomeScreen(Screen):
-    def __init__(self, **kwargs):
-        super(HomeScreen, self).__init__(**kwargs)
-        layout = BoxLayout(orientation='vertical')
-        
-        btn_add_password = Button(text='Adicionar Senha')
-        btn_add_password.bind(on_press=self.add_password)
-        
-        layout.add_widget(btn_add_password)
-        self.add_widget(layout)
-    
-    def add_password(self, instance):
-        # Aqui você poderia mudar para outra tela, como a de adicionar senha
-        print("Navegar para a tela de adicionar senha")
-        
-# Gerenciador de telas
+
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
+
+
+from kivy.core.window import Window
+
+# Defina o tamanho da janela para simular um dispositivo móvel
+Window.size = (360, 640)  # Dimensões típicas para um dispositivo móvel em modo retrato
+
+
+
 class ScreenManagement(ScreenManager):
     pass
 
-# Aplicativo principal
 class PasswordManagerApp(App):
     def build(self):
         sm = ScreenManagement()
         sm.add_widget(HomeScreen(name='home'))
+        sm.add_widget(AddPasswordScreen(name='add_password'))
         return sm
 
 if __name__ == '__main__':
     PasswordManagerApp().run()
+
+
