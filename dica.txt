@@ -1,0 +1,5 @@
+git status – Verifica as mudanças.
+git add . – Adiciona todas as mudanças.
+git commit -m "Descrição" – Faz o commit.
+git push – Envia as mudanças para o GitHub.
+git pull – Sincroniza com o repositório remoto (opcional, mas recomendado).
