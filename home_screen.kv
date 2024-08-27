@@ -1,16 +1,92 @@
+<MyScreenManager>:
+    HomeScreen:
+    AddPasswordScreen:
+    SegundaTela:
+
 <HomeScreen>:
+    name: 'home'
+    FloatLayout:  # Usar FloatLayout para controle absoluto
+        # Adiciona um Label no topo (deve ser adicionado primeiro para aparecer acima da imagem)
+        Label:
+            text: "Seja Bem Vindo ao CryptLock"
+            font_size: '22sp'
+            size_hint: (.8, None)
+            height: 50
+            pos_hint: {'center_x': 0.5, 'top': 0.85}  # Ajusta a posição do texto para ficar acima da imagem
+
+        # Adiciona a imagem
+        Image:
+            source: './Imagens/_15a56c52-779a-4c4c-ac71-2cbb458d3ad9.jpeg'
+            size_hint: (.7, .7)  # Define o tamanho da imagem
+            pos_hint: {'center_x': 0.5, 'center_y': 0.5}  # Ajusta a posição vertical da imagem
+
+        # Adiciona um botão na parte inferior
+        Button:
+            text: "Visualizar Credenciais"
+            font_size: '20sp'
+            size_hint: (.5, None)  # Largura ajustável, altura fixa
+            height: 50  # Ajusta a altura para se adequar ao texto
+            pos_hint: {'center_x': 0.5, 'y': 0.05}  # Posição do botão
+            text_size: self.size  # Ajusta o tamanho do texto ao tamanho do botão
+            halign: 'center'  # Alinha o texto horizontalmente ao centro
+            valign: 'middle'  # Alinha o texto verticalmente ao meio
+            on_press: root.manager.current = 'add_password'
+
+
+
+
+
+<AddPasswordScreen>:
+    name: 'add_password'
+    FloatLayout:  # Usar FloatLayout para controle absoluto
+
     BoxLayout:
         orientation: 'vertical'
         padding: 10
         spacing: 10
         
+    
+        Image:
+            source: './Imagens/_b6199719-8ba0-475e-88ae-a0b0e2ecd856.jpeg'  # Insira o caminho da sua imagem
+            size_hint: (.7, .7)  # Define o tamanho da imagem
+            pos_hint: {'center_x': 0.5, 'center_y': 0.5}  # Ajusta a posição vertical da imagem
+
         Button:
-            text: "Adicionar Senha"
-            font_size: 24
-            on_press: app.root.current = 'add_password'
+            text: "Retornar"
+            font_size: '20sp'
+            size_hint: (.5, None)  # Largura ajustável, altura fixa
+            height: 50  # Ajuste a altura para se adequar ao texto
+            pos_hint: {'center_x': 0.5}  # Centraliza horizontalmente
+            text_size: self.size  # Ajusta o tamanho do texto ao tamanho do botão
+            halign: 'center'  # Alinha o texto horizontalmente ao centro
+            valign: 'middle'  # Alinha o texto verticalmente ao meio
+            on_press: root.manager.current = 'home'
+
+
+
+
+
+
+<TerceiraTela>:
+    name: 'Terceira_Tela'
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 10
+        spacing: 10
         
+        Label:
+            text: "Tela de Inserção de Credenciais"
+            font_size: '24sp'
+            size_hint_y: 0.8
+
         Button:
-            text: "Ver Senhas"
-            font_size: 24
-            # Aqui você pode adicionar a navegação para a tela de visualização de senhas (quando houver)
+            text: "Retornar"
+            font_size: '20sp'
+            size_hint: (.5, None)  # Largura ajustável, altura fixa
+            height: 50  # Ajuste a altura para se adequar ao texto
+            pos_hint: {'center_x': 0.5}  # Centraliza horizontalmente
+            text_size: self.size  # Ajusta o tamanho do texto ao tamanho do botão
+            halign: 'center'  # Alinha o texto horizontalmente ao centro
+            valign: 'middle'  # Alinha o texto verticalmente ao meio
+            on_press: root.manager.current = 'home'
 
