@@ -6,68 +6,86 @@
 <HomeScreen>:
     name: 'home'
     FloatLayout:  # Usar FloatLayout para controle absoluto
-        # Adiciona um Label no topo (deve ser adicionado primeiro para aparecer acima da imagem)
+        # Adiciona um Label no topo
         Label:
             text: "Seja Bem Vindo ao CryptLock"
             font_size: '22sp'
             size_hint: (.8, None)
             height: 50
-            pos_hint: {'center_x': 0.5, 'top': 0.85}  # Ajusta a posição do texto para ficar acima da imagem
+            pos_hint: {'center_x': 0.5, 'top': 0.85}  # Posição do texto acima da imagem
 
         # Adiciona a imagem
         Image:
             source: './Imagens/_15a56c52-779a-4c4c-ac71-2cbb458d3ad9.jpeg'
-            size_hint: (.7, .7)  # Define o tamanho da imagem
-            pos_hint: {'center_x': 0.5, 'center_y': 0.5}  # Ajusta a posição vertical da imagem
+            size_hint: (.7, .7)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.5}  # Posição da imagem centralizada
 
         # Adiciona um botão na parte inferior
         Button:
             text: "Visualizar Credenciais"
             font_size: '20sp'
-            size_hint: (.5, None)  # Largura ajustável, altura fixa
-            height: 50  # Ajusta a altura para se adequar ao texto
-            pos_hint: {'center_x': 0.5, 'y': 0.05}  # Posição do botão
-            text_size: self.size  # Ajusta o tamanho do texto ao tamanho do botão
-            halign: 'center'  # Alinha o texto horizontalmente ao centro
-            valign: 'middle'  # Alinha o texto verticalmente ao meio
+            size_hint: (.5, None)
+            height: 50
+            pos_hint: {'center_x': 0.5, 'y': 0.05}
+            text_size: self.size
+            halign: 'center'
+            valign: 'middle'
             on_press: root.manager.current = 'add_password'
-
-
-
-
 
 <AddPasswordScreen>:
     name: 'add_password'
-    FloatLayout:  # Usar FloatLayout para controle absoluto
+    FloatLayout:
 
-    BoxLayout:
-        orientation: 'vertical'
-        padding: 10
-        spacing: 10
-        
-    
+        # Adiciona a imagem no topo
         Image:
-            source: './Imagens/_b6199719-8ba0-475e-88ae-a0b0e2ecd856.jpeg'  # Insira o caminho da sua imagem
-            size_hint: (.7, .7)  # Define o tamanho da imagem
-            pos_hint: {'center_x': 0.5, 'center_y': 0.5}  # Ajusta a posição vertical da imagem
+            source: './Imagens/_b6199719-8ba0-475e-88ae-a0b0e2ecd856.jpeg'
+            size_hint: (.6, .4)
+            pos_hint: {'center_x': 0.5, 'top': 1}  # Coloca a imagem no topo
 
+        # Adiciona um BoxLayout centralizado para os botões
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint: (.8, None)
+            height: 150  # Altura ajustada para os dois botões
+            pos_hint: {'center_x': 0.5, 'center_y': 0.5}  # Centraliza o BoxLayout logo abaixo da imagem
+
+            Button:
+                text: "Credenciais Salvas"
+                font_size: '15sp'
+                size_hint_y: None
+                height: 40
+                on_press: app.root.current = 'gerador_senha'  # Exemplo de funcionalidade futura
+
+            Button:
+                text: "Gerador de Senha"
+                font_size: '15sp'
+                size_hint_y: None
+                height: 40
+                on_press: app.root.current = 'gerador_nome'  # Exemplo de funcionalidade futura
+
+
+            Button:
+                text: "Criptografia de Senha"
+                font_size: '15sp'
+                size_hint_y: None
+                height: 40
+                on_press: app.root.current = 'gerador_nome'  # Exemplo de funcionalidade futura
+
+
+
+        # Adiciona o botão para voltar ao menu principal
         Button:
-            text: "Retornar"
-            font_size: '20sp'
-            size_hint: (.5, None)  # Largura ajustável, altura fixa
-            height: 50  # Ajuste a altura para se adequar ao texto
-            pos_hint: {'center_x': 0.5}  # Centraliza horizontalmente
-            text_size: self.size  # Ajusta o tamanho do texto ao tamanho do botão
-            halign: 'center'  # Alinha o texto horizontalmente ao centro
-            valign: 'middle'  # Alinha o texto verticalmente ao meio
+            text: "Voltar ao Menu"
+            font_size: '18sp'
+            size_hint: (.5, None)
+            height: 50
+            pos_hint: {'center_x': 0.5, 'y': 0.05}
             on_press: root.manager.current = 'home'
 
 
 
 
-
-
-<TerceiraTela>:
+<Terceira_Tela>:
     name: 'Terceira_Tela'
     BoxLayout:
         orientation: 'vertical'
@@ -82,11 +100,10 @@
         Button:
             text: "Retornar"
             font_size: '20sp'
-            size_hint: (.5, None)  # Largura ajustável, altura fixa
-            height: 50  # Ajuste a altura para se adequar ao texto
-            pos_hint: {'center_x': 0.5}  # Centraliza horizontalmente
-            text_size: self.size  # Ajusta o tamanho do texto ao tamanho do botão
-            halign: 'center'  # Alinha o texto horizontalmente ao centro
-            valign: 'middle'  # Alinha o texto verticalmente ao meio
+            size_hint: (.5, None)
+            height: 50
+            pos_hint: {'center_x': 0.5}
+            text_size: self.size
+            halign: 'center'
+            valign: 'middle'
             on_press: root.manager.current = 'home'
-

@@ -14,6 +14,7 @@ class AddPasswordScreen(Screen):
 class SegundaTela(Screen):
     pass
 
+
 class MyScreenManager(ScreenManager):
     pass
 
@@ -23,7 +24,7 @@ class MyApp(App):
         Window.size = (360, 640)
         Window.clearcolor = (19/255, 33/255, 69/255, 1)  # Fundo azul
         Builder.load_file('home_screen.kv')
-
+    
 
 
         
