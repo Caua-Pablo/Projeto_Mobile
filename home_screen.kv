@@ -1,7 +1,8 @@
 <MyScreenManager>:
     HomeScreen:
-    AddPasswordScreen:
-    SegundaTela:
+    Menu_Opcoes:
+    Visualizador_Senhas:
+    AddCredencial:
 
 <HomeScreen>:
     name: 'home'
@@ -30,12 +31,11 @@
             text_size: self.size
             halign: 'center'
             valign: 'middle'
-            on_press: root.manager.current = 'add_password'
+            on_press: root.manager.current = 'menu_opcoes_escolha'
 
-<AddPasswordScreen>:
-    name: 'add_password'
+<Menu_Opcoes>:
+    name: 'menu_opcoes_escolha'
     FloatLayout:
-
         # Adiciona a imagem no topo
         Image:
             source: './Imagens/_b6199719-8ba0-475e-88ae-a0b0e2ecd856.jpeg'
@@ -54,24 +54,13 @@
                 font_size: '15sp'
                 size_hint_y: None
                 height: 40
-                on_press: app.root.current = 'gerador_senha'  # Exemplo de funcionalidade futura
+                on_press: root.manager.current = 'Visualizador_Senhas_contas'
 
             Button:
                 text: "Gerador de Senha"
                 font_size: '15sp'
                 size_hint_y: None
                 height: 40
-                on_press: app.root.current = 'gerador_nome'  # Exemplo de funcionalidade futura
-
-
-            Button:
-                text: "Criptografia de Senha"
-                font_size: '15sp'
-                size_hint_y: None
-                height: 40
-                on_press: app.root.current = 'gerador_nome'  # Exemplo de funcionalidade futura
-
-
 
         # Adiciona o botão para voltar ao menu principal
         Button:
@@ -82,28 +71,120 @@
             pos_hint: {'center_x': 0.5, 'y': 0.05}
             on_press: root.manager.current = 'home'
 
+<Visualizador_Senhas>:
+    name: 'Visualizador_Senhas_contas'
+    FloatLayout:
+        # Adiciona a imagem no topo
+        Image:
+            source: './Imagens/_b6199719-8ba0-475e-88ae-a0b0e2ecd856.jpeg'
+            size_hint: (.6, .4)
+            pos_hint: {'center_x': 0.5, 'top': 1}
+
+        # BoxLayout para armazenar credenciais adicionadas
+        BoxLayout:
+            id: credenciais_box
+            orientation: 'vertical'
+            size_hint: (.4, None)
+            height: 150
+            pos_hint: {'x': 0, 'center_y': 0.5}
+
+        # Ícone para adicionar nova credencial
+        Button:
+            size_hint: (None, None)
+            size: (40, 40)
+            pos_hint: {'right': 1, 'top': 0.6}
+            background_normal: './Imagens/Button-circle-add_icon-icons.webp'
+            on_press: root.manager.current = 'add_credencial_senha'
+
+        # Botão para voltar ao menu principal
+        Button:
+            text: "Voltar ao Menu"
+            font_size: '18sp'
+            size_hint: (.5, None)
+            height: 50
+            pos_hint: {'center_x': 0.5, 'y': 0.05}
+            on_press: root.manager.current = 'menu_opcoes_escolha'
 
 
 
-<Terceira_Tela>:
-    name: 'Terceira_Tela'
-    BoxLayout:
-        orientation: 'vertical'
-        padding: 10
-        spacing: 10
-        
+
+
+
+
+
+
+
+
+<AddCredencial>:
+    name: 'add_credencial_senha'
+    FloatLayout:
         Label:
-            text: "Tela de Inserção de Credenciais"
-            font_size: '24sp'
-            size_hint_y: 0.8
+            text: "Inserção de Credencial"
+            font_size: '22sp'
+            size_hint: (.8, None)
+            height: 50
+            pos_hint: {'center_x': 0.5, 'top': 0.9}
+
+        Label:
+            text: "Nome:"
+            font_size: '18sp'
+            size_hint: (.3, None)
+            height: 30
+            pos_hint: {'x': 0.1, 'top': 0.85}
+
+        TextInput:
+            id: nome_input
+            multiline: False
+            size_hint: (.8, None)
+            height: 40
+            pos_hint: {'center_x': 0.5, 'top': 0.8}
+
+        Label:
+            text: "Usuário:"
+            font_size: '18sp'
+            size_hint: (.3, None)
+            height: 30
+            pos_hint: {'x': 0.1, 'top': 0.7}
+
+        TextInput:
+            id: usuario_input
+            multiline: False
+            size_hint: (.8, None)
+            height: 40
+            pos_hint: {'center_x': 0.5, 'top': 0.65}
+
+        Label:
+            text: "Senha:"
+            font_size: '18sp'
+            size_hint: (.3, None)
+            height: 30
+            pos_hint: {'x': 0.1, 'top': 0.55}
+
+        TextInput:
+            id: senha_input
+            multiline: False
+            password: True
+            size_hint: (.8, None)
+            height: 40
+            pos_hint: {'center_x': 0.5, 'top': 0.5}
+
+        Label:
+            text: "Notas:"
+            font_size: '18sp'
+            size_hint: (.3, None)
+            height: 30
+            pos_hint: {'x': 0.1, 'top': 0.4}
+
+        TextInput:
+            id: notas_input
+            multiline: True
+            size_hint: (.8, .3)
+            pos_hint: {'center_x': 0.5, 'top': 0.35}
 
         Button:
-            text: "Retornar"
+            text: "Salvar"
             font_size: '20sp'
             size_hint: (.5, None)
             height: 50
-            pos_hint: {'center_x': 0.5}
-            text_size: self.size
-            halign: 'center'
-            valign: 'middle'
-            on_press: root.manager.current = 'home'
+            pos_hint: {'center_x': 0.5, 'y': 0.05}
+            on_press: root.salvar_credencial(nome_input.text, usuario_input.text, senha_input.text, notas_input.text)
