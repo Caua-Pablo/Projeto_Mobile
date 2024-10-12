@@ -71,39 +71,49 @@
             pos_hint: {'center_x': 0.5, 'y': 0.05}
             on_press: root.manager.current = 'home'
 
+
+
+
+
+
+
+
 <Visualizador_Senhas>:
-    name: 'Visualizador_Senhas_contas'
-    FloatLayout:
-        # Adiciona a imagem no topo
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 10
+        spacing: 10
+
+        # Adiciona a imagem no topo da tela
         Image:
             source: './Imagens/_b6199719-8ba0-475e-88ae-a0b0e2ecd856.jpeg'
-            size_hint: (.6, .4)
-            pos_hint: {'center_x': 0.5, 'top': 1}
+            size_hint_y: None
+            height: 200  # Ajuste a altura da imagem conforme necessário
 
-        # BoxLayout para armazenar credenciais adicionadas
-        BoxLayout:
-            id: credenciais_box
-            orientation: 'vertical'
-            size_hint: (.4, None)
-            height: 150
-            pos_hint: {'x': 0, 'center_y': 0.5}
+        # Adiciona a área de visualização das credenciais
+        ScrollView:
+            GridLayout:
+                id: credenciais_box
+                cols: 1
+                size_hint_y: None
+                height: self.minimum_height
+                spacing: 10
 
-        # Ícone para adicionar nova credencial
+        # Adiciona o botão "Adicionar Nova Senha"
         Button:
-            size_hint: (None, None)
-            size: (40, 40)
-            pos_hint: {'right': 1, 'top': 0.6}
-            background_normal: './Imagens/Button-circle-add_icon-icons.webp'
-            on_press: root.manager.current = 'add_credencial_senha'
+            text: "Adicionar Nova Senha"
+            size_hint_y: None
+            height: 50
+            on_release:
+                app.root.current = 'add_credencial_senha'
 
-        # Botão para voltar ao menu principal
+        # Adiciona o botão de "Voltar ao Menu" na parte inferior
         Button:
             text: "Voltar ao Menu"
-            font_size: '18sp'
-            size_hint: (.5, None)
+            size_hint_y: None
             height: 50
-            pos_hint: {'center_x': 0.5, 'y': 0.05}
-            on_press: root.manager.current = 'menu_opcoes_escolha'
+            on_release:
+                app.root.current = 'menu_opcoes_escolha'
 
 
 

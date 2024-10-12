@@ -5,6 +5,7 @@ from kivy.lang import Builder
 from kivy.uix.button import Button
 from kivy.uix.label import Label
 from kivy.uix.popup import Popup
+from kivy.uix.boxlayout import BoxLayout
 
 class HomeScreen(Screen):
     pass
@@ -16,7 +17,7 @@ class Visualizador_Senhas(Screen):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.credenciais = []
-
+        
     def adicionar_credenciais(self, nome, usuario, senha, notas):
         # Adiciona a nova credencial à lista
         self.credenciais.append((nome, usuario, senha, notas))
@@ -27,18 +28,31 @@ class Visualizador_Senhas(Screen):
         # Limpa o layout antes de adicionar novos botões
         self.ids.credenciais_box.clear_widgets()
         # Adiciona um botão para cada credencial salva
-        for credencial in self.credenciais:
+        for index, credencial in enumerate(self.credenciais):
             nome, usuario, senha, notas = credencial
-            button = Button(text=nome, size_hint_y=None, height=40)
-            # Ao clicar no botão, mostrar as credenciais
-            button.bind(on_press=lambda x, n=nome, u=usuario, s=senha, nt=notas: self.mostrar_credenciais(n, u, s, nt))
-            self.ids.credenciais_box.add_widget(button)
+            box = BoxLayout(orientation='horizontal', size_hint_y=None, height=40)
+            # Botão para visualizar a credencial
+            view_button = Button(text=nome, size_hint_x=0.8)
+            view_button.bind(on_press=lambda x, n=nome, u=usuario, s=senha, nt=notas: self.mostrar_credenciais(n, u, s, nt))
+            # Botão para excluir a credencial
+            delete_button = Button(text="Excluir", size_hint_x=0.2)
+            delete_button.bind(on_press=lambda x, i=index: self.excluir_credencial(i))
+            
+            box.add_widget(view_button)
+            box.add_widget(delete_button)
+            self.ids.credenciais_box.add_widget(box)
 
     def mostrar_credenciais(self, nome, usuario, senha, notas):
         # Exibe um popup com os detalhes da credencial
         popup_content = f"Nome: {nome}\nUsuário: {usuario}\nSenha: {senha}\nNotas: {notas}"
         popup = Popup(title="Detalhes da Credencial", content=Label(text=popup_content), size_hint=(0.8, 0.5))
         popup.open()
+
+    def excluir_credencial(self, index):
+        # Remove a credencial da lista pelo índice
+        del self.credenciais[index]
+        # Atualiza a visualização para refletir a exclusão
+        self.atualizar_credenciais()
 
 class AddCredencial(Screen):
     def on_pre_enter(self, *args):
