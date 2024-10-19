@@ -12,6 +12,7 @@ class HomeScreen(Screen):
 
 class Menu_Opcoes(Screen):
     pass
+teste
 
 class Visualizador_Senhas(Screen):
     def __init__(self, **kwargs):
