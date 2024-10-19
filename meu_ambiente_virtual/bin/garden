@@ -1,4 +1,4 @@
-#!/home/cauaic/Documents/Pessoal/Projeto_Mobile/meu_ambiente_virtual/bin/python
+#!/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/meu_ambiente_virtual/bin/python3
 
 import sys
 import argparse

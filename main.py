@@ -6,13 +6,18 @@ from kivy.uix.button import Button
 from kivy.uix.label import Label
 from kivy.uix.popup import Popup
 from kivy.uix.boxlayout import BoxLayout
+from bd import MySQLDatabase
 
+
+if __name__ == '__main__':
+    print("Runing")
+    
 class HomeScreen(Screen):
     pass
 
 class Menu_Opcoes(Screen):
     pass
-teste
+
 
 class Visualizador_Senhas(Screen):
     def __init__(self, **kwargs):
