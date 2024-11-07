@@ -3,6 +3,7 @@
     Menu_Opcoes:
     Visualizador_Senhas:
     AddCredencial:
+    GeradorSenhasScreen:
 
 <HomeScreen>:
     name: 'home'
@@ -13,6 +14,7 @@
             font_size: '22sp'
             size_hint: (.8, None)
             height: 50
+            bold: True
             pos_hint: {'center_x': 0.5, 'top': 0.85}  # Posição do texto acima da imagem
 
         # Adiciona a imagem
@@ -31,6 +33,8 @@
             text_size: self.size
             halign: 'center'
             valign: 'middle'
+            background_color: 0.1, 0.5, 0.9, 1
+
             on_press: root.manager.current = 'menu_opcoes_escolha'
 
 <Menu_Opcoes>:
@@ -54,6 +58,7 @@
                 font_size: '15sp'
                 size_hint_y: None
                 height: 40
+                background_color: 0.1, 0.5, 0.9, 1
                 on_press: root.manager.current = 'Visualizador_Senhas_contas'
 
             Button:
@@ -61,12 +66,15 @@
                 font_size: '15sp'
                 size_hint_y: None
                 height: 40
+                background_color: 0.1, 0.5, 0.9, 1
+                on_press: root.manager.current = 'gerador_senhas'
 
         # Adiciona o botão para voltar ao menu principal
         Button:
             text: "Voltar ao Menu"
             font_size: '18sp'
             size_hint: (.5, None)
+            background_color: 0.1, 0.5, 0.9, 1
             height: 50
             pos_hint: {'center_x': 0.5, 'y': 0.05}
             on_press: root.manager.current = 'home'
@@ -96,6 +104,7 @@
                 id: credenciais_box
                 cols: 1
                 size_hint_y: None
+                background_color: 0.1, 0.5, 0.9, 1
                 height: self.minimum_height
                 spacing: 10
 
@@ -104,6 +113,7 @@
             text: "Adicionar Nova Senha"
             size_hint_y: None
             height: 50
+            background_color: 0.1, 0.5, 0.9, 1
             on_release:
                 app.root.current = 'add_credencial_senha'
 
@@ -112,6 +122,7 @@
             text: "Voltar ao Menu"
             size_hint_y: None
             height: 50
+            background_color: 0.1, 0.5, 0.9, 1
             on_release:
                 app.root.current = 'menu_opcoes_escolha'
 
@@ -122,6 +133,65 @@
 
 
 
+<GeradorSenhasScreen>:
+    name: "gerador_senhas"
+    BoxLayout:
+        orientation: "vertical"
+        padding: [dp(20), dp(40)]
+        spacing: dp(20)
+        Label:
+
+            text: "Gerador de Senhas"
+            font_size: "22sp"
+            bold: True
+            halign: "center"
+        TextInput:
+            id: tamanho_input
+            hint_text: "Digite o tamanho da senha"
+            multiline: False
+            input_filter: "int"
+            size_hint_y: None
+            height: dp(40)
+        Button:
+            text: "Gerar Senha"
+            size_hint_y: None
+            height: dp(50)
+            bold: True
+            background_color: 0.1, 0.5, 0.9, 1
+
+            on_release: root.gerar_nova_senha(int(tamanho_input.text) if tamanho_input.text else 12)
+        Label:
+            text: "Senha Gerada:"
+            font_size: "18sp"
+            bold: True
+        Label:
+            text: root.senha_gerada
+            font_size: "16sp"
+            color: 1, 1, 1, 1
+            halign: "center"
+            size_hint_y: None
+            height: dp(40)  # Limita a altura da label para a senha gerada
+        Label:
+            text: "Senha Criptografada (SHA-256):"
+            font_size: "18sp"
+            bold: True
+
+        ScrollView:
+            size_hint_y: None
+            height: dp(80)  # Limita a altura da área do hash
+            Label:
+                text: root.senha_criptografada
+                font_size: "14sp"
+                color: 1, 1, 1, 1
+                halign: "center"
+                text_size: self.width, None  # Quebra de linha automática
+
+        Button:
+            text: "Voltar"
+            size_hint_y: None
+            height: dp(50)
+            on_release: app.root.current = "menu_opcoes_escolha"
+            background_color: 0.1, 0.5, 0.9, 1
 
 
 
@@ -133,6 +203,7 @@
             font_size: '22sp'
             size_hint: (.8, None)
             height: 50
+            background_color: 0.1, 0.5, 0.9, 1
             pos_hint: {'center_x': 0.5, 'top': 0.9}
 
         Label:
@@ -196,5 +267,6 @@
             font_size: '20sp'
             size_hint: (.5, None)
             height: 50
+            background_color: 0.1, 0.5, 0.9, 1
             pos_hint: {'center_x': 0.5, 'y': 0.05}
             on_press: root.salvar_credencial(nome_input.text, usuario_input.text, senha_input.text, notas_input.text)
