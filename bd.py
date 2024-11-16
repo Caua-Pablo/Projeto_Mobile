@@ -70,7 +70,7 @@ if __name__ == "__main__":
 
     # Executa uma query de exemplo
     db.execute_query("CREATE TABLE IF NOT EXISTS teste (id INT AUTO_INCREMENT PRIMARY KEY, nome VARCHAR(255))")
-    
+
     # Insere dados
     db.execute_query("INSERT INTO teste VALUES ('Ferramenta A')")
 

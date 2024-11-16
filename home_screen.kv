@@ -159,6 +159,9 @@
             bold: True
             background_color: 0.1, 0.5, 0.9, 1
 
+       
+
+
             on_release: root.gerar_nova_senha(int(tamanho_input.text) if tamanho_input.text else 12)
         Label:
             text: "Senha Gerada:"
@@ -171,6 +174,23 @@
             halign: "center"
             size_hint_y: None
             height: dp(40)  # Limita a altura da label para a senha gerada
+
+        Button:
+            text: "Copiar Senha"
+            size_hint_y: None
+            height: dp(50)
+            background_color: 0.1, 0.5, 0.9, 1
+            on_release: root.copiar_senha()
+
+
+        Label:
+            id: feedback_label
+            text: 'Nenhuma senha copiada ainda' 
+
+
+
+
+            
         Label:
             text: "Senha Criptografada (SHA-256):"
             font_size: "18sp"
@@ -185,6 +205,14 @@
                 color: 1, 1, 1, 1
                 halign: "center"
                 text_size: self.width, None  # Quebra de linha automática
+
+
+        Button:
+            text: "Copiar Criptografia"
+            size_hint_y: None
+            height: dp(50)
+            background_color: 0.1, 0.5, 0.9, 1
+            on_release: root.copiar_senha_criptografada()
 
         Button:
             text: "Voltar"

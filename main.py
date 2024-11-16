@@ -10,6 +10,11 @@ from kivy.properties import StringProperty
 import secrets
 import string
 import hashlib
+import pyperclip
+from kivy.core.clipboard import Clipboard
+
+
+
 
 # Configuração da janela
 Window.size = (360, 640)
@@ -20,6 +25,32 @@ def gerar_senha(tamanho=12):
     caracteres = string.ascii_letters + string.ascii_lowercase + string.ascii_uppercase + string.punctuation
     senha = ''.join(secrets.choice(caracteres) for _ in range(tamanho))
     return senha
+
+
+def copiar_para_area_de_transferencia(texto):
+    pyperclip.copy(texto)  # Copia o texto para a área de transferência
+    print("Texto copiado para a área de transferência.")  # Para depuração, pode remover essa linha depois
+
+
+
+       # Função para copiar senha gerada
+    def copiar_senha_gerada(self):
+        copiar_para_area_de_transferencia(self.senha_gerada)
+
+    # Função para copiar a senha criptografada
+    def copiar_senha_criptografada(self):
+        try:
+            if self.senha_criptografada:
+                # Copia a senha criptografada para a área de transferência
+                pyperclip.copy(self.senha_criptografada)
+                print(f"Senha criptografada copiada: {self.senha_criptografada}")
+            else:
+                print("Senha não está definida.")
+        except Exception as e:
+            print(f"Erro ao copiar a senha: {e}")
+
+
+
 
 # Função para criptografar a senha gerada
 def criptografar_senha(senha):
@@ -37,13 +68,31 @@ class Menu_Opcoes(Screen):
 
 # Tela do gerador de senhas
 class GeradorSenhasScreen(Screen):
-    senha_gerada = StringProperty("")
-    senha_criptografada = StringProperty("")
+    senha_gerada = StringProperty("")  # Senha gerada
+    senha_criptografada = StringProperty("")  # Senha criptografada (se necessário)
+
+    def copiar_senha(self):
+        senha = self.senha_gerada  # Usando a senha gerada da propriedade
+        Clipboard.copy(senha)
+        self.ids.feedback_label.text = f'Senha copiada: {senha}'  # Feedback visual para o usuário
+        print("Senha copiada!")
 
     def gerar_nova_senha(self, tamanho=12):
         senha = gerar_senha(tamanho)
         self.senha_gerada = senha
         self.senha_criptografada = criptografar_senha(senha)
+
+    # Método corrigido para copiar senha criptografada
+    def copiar_senha_criptografada(self):
+        try:
+            if self.senha_criptografada:
+                pyperclip.copy(self.senha_criptografada)
+                print(f"Senha criptografada copiada: {self.senha_criptografada}")
+            else:
+                print("Senha não está definida.")
+        except Exception as e:
+            print(f"Erro ao copiar a senha: {e}")
+
 
 # Tela para visualizar senhas
 class Visualizador_Senhas(Screen):
