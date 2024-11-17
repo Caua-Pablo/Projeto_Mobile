@@ -1,0 +1,6 @@
+certifi
+chardet
+idna
+pyperclip
+requests
+urllib3

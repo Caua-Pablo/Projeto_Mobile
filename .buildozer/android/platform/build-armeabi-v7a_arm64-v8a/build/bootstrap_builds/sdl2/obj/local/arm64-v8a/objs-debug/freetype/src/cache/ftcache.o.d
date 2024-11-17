@@ -1,0 +1,146 @@
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/obj/local/arm64-v8a/objs-debug/freetype/./src/cache/ftcache.o: \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/./src/cache/ftcache.c \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/./src/cache/ftcbasic.c \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/internal/ftobjs.h \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/ftrender.h \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/ftmodapi.h \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/freetype.h \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/ft2build.h \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/config/ftheader.h \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/config/ftconfig.h \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/config/ftoption.h \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/config/ftstdlib.h \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/config/integer-types.h \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/config/public-macros.h \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/config/mac-support.h \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/fttypes.h \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/ftsystem.h \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/ftimage.h \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/fterrors.h \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/ftmoderr.h \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/fterrdef.h \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/ftglyph.h \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/ftsizes.h \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/ftlcdfil.h \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/ftparams.h \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/internal/ftmemory.h \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/internal/compiler-macros.h \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/internal/ftgloadr.h \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/internal/ftdrv.h \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/internal/autohint.h \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/internal/ftserv.h \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/internal/ftcalc.h \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/ftincrem.h \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/internal/ftdebug.h \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/ftcache.h \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/./src/cache/ftcglyph.h \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/./src/cache/ftcmanag.h \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/./src/cache/ftcmru.h \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/./src/cache/ftccache.h \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/./src/cache/ftcimage.h \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/./src/cache/ftcsbits.h \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/./src/cache/ftccback.h \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/./src/cache/ftcerror.h \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/./src/cache/ftccache.c \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/./src/cache/ftccmap.c \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/./src/cache/ftcglyph.c \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/./src/cache/ftcimage.c \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/./src/cache/ftcmanag.c \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/./src/cache/ftcmru.c \
+  /home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/./src/cache/ftcsbits.c
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/./src/cache/ftcbasic.c:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/internal/ftobjs.h:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/ftrender.h:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/ftmodapi.h:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/freetype.h:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/ft2build.h:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/config/ftheader.h:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/config/ftconfig.h:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/config/ftoption.h:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/config/ftstdlib.h:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/config/integer-types.h:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/config/public-macros.h:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/config/mac-support.h:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/fttypes.h:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/ftsystem.h:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/ftimage.h:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/fterrors.h:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/ftmoderr.h:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/fterrdef.h:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/ftglyph.h:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/ftsizes.h:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/ftlcdfil.h:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/ftparams.h:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/internal/ftmemory.h:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/internal/compiler-macros.h:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/internal/ftgloadr.h:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/internal/ftdrv.h:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/internal/autohint.h:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/internal/ftserv.h:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/internal/ftcalc.h:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/ftincrem.h:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/internal/ftdebug.h:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/include/freetype/ftcache.h:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/./src/cache/ftcglyph.h:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/./src/cache/ftcmanag.h:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/./src/cache/ftcmru.h:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/./src/cache/ftccache.h:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/./src/cache/ftcimage.h:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/./src/cache/ftcsbits.h:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/./src/cache/ftccback.h:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/./src/cache/ftcerror.h:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/./src/cache/ftccache.c:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/./src/cache/ftccmap.c:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/./src/cache/ftcglyph.c:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/./src/cache/ftcimage.c:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/./src/cache/ftcmanag.c:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/./src/cache/ftcmru.c:
+
+/home/cauaic/Documents/Projeto_Mobile_Att/Projeto_Mobile/.buildozer/android/platform/build-armeabi-v7a_arm64-v8a/build/bootstrap_builds/sdl2/jni/SDL2_ttf/external/freetype/./src/cache/ftcsbits.c:

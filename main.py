@@ -12,6 +12,8 @@ import string
 import hashlib
 import pyperclip
 from kivy.core.clipboard import Clipboard
+from kivy.properties import BooleanProperty, StringProperty
+
 
 
 
@@ -70,6 +72,8 @@ class Menu_Opcoes(Screen):
 class GeradorSenhasScreen(Screen):
     senha_gerada = StringProperty("")  # Senha gerada
     senha_criptografada = StringProperty("")  # Senha criptografada (se necessário)
+    hash_visivel = BooleanProperty(False)  # Controla a visibilidade do hash
+
 
     def copiar_senha(self):
         senha = self.senha_gerada  # Usando a senha gerada da propriedade
@@ -78,11 +82,17 @@ class GeradorSenhasScreen(Screen):
         print("Senha copiada!")
 
     def gerar_nova_senha(self, tamanho=12):
-        senha = gerar_senha(tamanho)
-        self.senha_gerada = senha
-        self.senha_criptografada = criptografar_senha(senha)
+            senha = gerar_senha(tamanho)
+            self.senha_gerada = senha
+            self.senha_criptografada = criptografar_senha(senha)
 
-    # Método corrigido para copiar senha criptografada
+    def alternar_visibilidade_hash(self):
+        # Alterna a visibilidade do hash
+        self.hash_visivel = not self.hash_visivel
+
+
+
+
     def copiar_senha_criptografada(self):
         try:
             if self.senha_criptografada:

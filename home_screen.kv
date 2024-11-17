@@ -140,11 +140,11 @@
         padding: [dp(20), dp(40)]
         spacing: dp(20)
         Label:
-
             text: "Gerador de Senhas"
             font_size: "22sp"
             bold: True
             halign: "center"
+        
         TextInput:
             id: tamanho_input
             hint_text: "Digite o tamanho da senha"
@@ -152,28 +152,27 @@
             input_filter: "int"
             size_hint_y: None
             height: dp(40)
+        
         Button:
             text: "Gerar Senha"
             size_hint_y: None
             height: dp(50)
             bold: True
             background_color: 0.1, 0.5, 0.9, 1
-
-       
-
-
             on_release: root.gerar_nova_senha(int(tamanho_input.text) if tamanho_input.text else 12)
+        
         Label:
             text: "Senha Gerada:"
             font_size: "18sp"
             bold: True
+        
         Label:
             text: root.senha_gerada
             font_size: "16sp"
             color: 1, 1, 1, 1
             halign: "center"
             size_hint_y: None
-            height: dp(40)  # Limita a altura da label para a senha gerada
+            height: dp(40)
 
         Button:
             text: "Copiar Senha"
@@ -182,37 +181,34 @@
             background_color: 0.1, 0.5, 0.9, 1
             on_release: root.copiar_senha()
 
-
         Label:
             id: feedback_label
             text: 'Nenhuma senha copiada ainda' 
 
-
-
-
-            
         Label:
             text: "Senha Criptografada (SHA-256):"
             font_size: "18sp"
             bold: True
-
+        
+        # Seção do hash criptografado com visibilidade controlada
         ScrollView:
             size_hint_y: None
             height: dp(80)  # Limita a altura da área do hash
             Label:
-                text: root.senha_criptografada
+                text: root.senha_criptografada if root.hash_visivel else "*****"
                 font_size: "14sp"
                 color: 1, 1, 1, 1
                 halign: "center"
                 text_size: self.width, None  # Quebra de linha automática
 
+        # Botão removido, conforme solicitado
 
         Button:
-            text: "Copiar Criptografia"
+            text: "Alternar Visibilidade do Hash"
             size_hint_y: None
             height: dp(50)
             background_color: 0.1, 0.5, 0.9, 1
-            on_release: root.copiar_senha_criptografada()
+            on_release: root.alternar_visibilidade_hash()
 
         Button:
             text: "Voltar"
@@ -220,6 +216,25 @@
             height: dp(50)
             on_release: app.root.current = "menu_opcoes_escolha"
             background_color: 0.1, 0.5, 0.9, 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
